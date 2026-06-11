@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é uma página modelo">
+    <meta name="keywords" content="sites, web, desenvolvimento backend">
+    <meta name="author" content="Samantha Antonella Duarte Mandonça">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Desafio 1 de JS </title>
+</head>
+<body>
+    <h1>Integrando os recursos de interatividade do JS</h1>
+    <hr>
+    <script>
+        let primeiroNumero = window.prompt("Digite o primeiro número:");
+        let operacao = window.prompt("Digite a operação desejada (+ ou -):");
+        let segundoNumero = window.prompt("Digite o segundo número:");
+
+        let n1 = parseFloat(primeiroNumero);
+        let n2 = parseFloat(segundoNumero);
+        let resultado;
+
+        if (operacao === "+") {
+            resultado = n1 + n2;
+        } else if (operacao === "-") {
+            resultado = n1 - n2;
+        } else {
+            resultado = "Operação inválida!";
+        }
+        console.log("Número 1:", n1);
+        console.log("Operação:", operacao);
+        console.log("Número 2:", n2);
+        console.log("Resultado final:", resultado);
+        window.alert("O resultado é: "+ resultado)
+    </script>
+
+</body>
+
+</html>

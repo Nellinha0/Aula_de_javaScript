@@ -12,11 +12,22 @@
     <title>EXERCÍCIOS 01 DE JS</title>
 </head>
 <body>
-    <h1>OLÁ MUNDO EM JS: <MARK>Alert</MARK></h1>
+    <h1>Integrando os recursos de interatividade do JS</h1>
     <hr>
     <script>
-        window.confirm("Você deseja sair da página?");
+        window.confirm("Seja bem-vindo ao site");
+        let nome = window.prompt("QUAL É O SEU NOME? ");
+        console.log(nome);
+        let resposta = window.confirm("Você deseja sair da página?")
+        console.log(resposta);
+        
+        if(resposta==true){
+            window.close()      
+        }else{
+            window.alert("Aproveite o meu site," +nome);
+        }
     </script>
+
 
 </body>
 </html>
