@@ -9,14 +9,19 @@
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="../css/estilo.css">
 
-    <title>EXERCÍCIOS 01 DE JS</title>
+    <title>Desafio 02 - JAVASCRIPT </title>
 </head>
 <body>
-    <h1>OLÁ MUNDO EM JS: <MARK>Alert</MARK></h1>
+    <h1>MANIPULANDO ELEMENTOS (TAGS)<mark>DO HTML ATRAVÉS DO JS</mark></h1>
     <hr>
-    <script>
-        window.confirm("Você deseja sair da página?");
-    </script>
+    <div>
+        <img width="100%" src="img/drac1.jpg" alt="Draculaura">
+    </div>
 
-</body>
+    <script>
+        const tag_img = document.getElementsByTagName("img")[0];
+        tag_img.src = "img/drac2.jpg";
+        tag_img.title= "Draculaura";
+    </script>
+    </body>
 </html>

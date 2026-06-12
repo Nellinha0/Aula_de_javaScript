@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é uma página modelo">
+    <meta name="keywords" content="sites, web, desenvolvimento backend">
+    <meta name="author" content="Samantha Antonella Duarte Mandonça">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <title>AULA 02 - EXERCÍCIO 01 DE JS</title>
+</head>
+<body>
+    <h1>MANIPULANDO ELEMENTOS (TAGS)<mark>DO HTML ATRAVÉS DO JS</mark></h1>
+    <hr>
+    <div>
+        <p>ESTAMOS APRENDENDO JAVASCRIPT</p>
+        <hr> 
+        <p>Aprender é muito legal</p>
+        <p>E para ajudar o aprendizado, é PRECISO praticar e exercitar </p>        
+    </div>
+
+    <script>
+        const tags_p = document.getElementsByTagName('p')
+        console.log(tags_p);
+
+        let tag_p_1 = tags_p[0];
+        tag_p_1.style.backgroundColor="blue"
+        tag_p_1.style.color="white"
+
+        let tag_p_2 = tags_p[1];
+        tag_p_2.style.textAlign="center";
+        tag_p_2.style.backgroundColor="purple";
+        tag_p_2.style.color="white"
+        tag_p_2.style.fontSize="60pt";
+
+        let tag_p_3 = tags_p[2];
+        tag_p_3.style.backgroundColor ="yellow";
+        tag_p_3.style.color="black";        
+        tag_p_3.style.fontSize="25pt";
+        tag_p_3.style.textAlign="right";
+
+
+
+    </script>
+
+
+</body>
+</html>
